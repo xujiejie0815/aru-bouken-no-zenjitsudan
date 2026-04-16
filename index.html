@@ -151,7 +151,7 @@ body{
 }
 
 /* ===== CHAPTER ===== */
-.ch-wrap{padding:36px 24px 16px;}
+.ch-wrap{padding:20px 24px 12px;}
 .ch-label{
   font-size:.7rem;color:var(--border);letter-spacing:4px;
   font-family:sans-serif;margin-bottom:6px;
@@ -345,14 +345,21 @@ body{
 .next-btn:hover{transform:scale(1.04);border-color:#ffd060;color:#ffd060;}
 .next-btn.last{border-color:#cc4444;color:#ff9090;}
 .next-btn.last:hover{border-color:#ff6060;}
+.back-btn-in-text{
+  display:inline-block;
+  writing-mode:horizontal-tb;
+  vertical-align:top;
+  padding:10px 0 0;
+  margin-right:20px;
+}
 .back-btn{
   display:inline-block;
-  padding:7px 22px;
+  padding:7px 18px;
   background:transparent;
   border:1px solid var(--gold);border-radius:20px;
-  color:var(--gold);font-size:.8rem;cursor:pointer;
+  color:var(--gold);font-size:.78rem;cursor:pointer;
   letter-spacing:1px;font-family:sans-serif;transition:all .2s;
-  margin:10px 0 4px;
+  white-space:nowrap;
 }
 .back-btn:hover{border-color:#ffd060;color:#ffd060;}
 
@@ -508,13 +515,12 @@ body{
   <!-- PAGE 2: 第二章 ＋ 謎1 -->
   <div class="story-page" id="pg2">
    <div class="page-wrap">
-    <div style="text-align:center;"><button class="back-btn" onclick="goPage(1)">◀ 前の章へ</button></div>
     <div class="ch-wrap">
       <div class="ch-label">第二章</div>
       <div class="ch-title">迷 い の 森</div>
     </div>
     <div class="text-theater">
-      <div class="story-text" id="st1b"><p class="dialogue"><span class="sp efi">エフィ</span>「ここが……エフィラの魔境の、迷いの森……」</p>
+      <div class="story-text" id="st1b"><div class="back-btn-in-text"><button class="back-btn" onclick="goPage(1)">◀ 前の章へ</button></div><p class="dialogue"><span class="sp efi">エフィ</span>「ここが……エフィラの魔境の、迷いの森……」</p>
 <p class="narration">鬱蒼と生い茂る木々、こだまする獣たちの遠吠え。とにかく不気味で暗い場所だった。</p>
 <p class="dialogue"><span class="sp kuro">黒猫</span>「まっ、正直ヘルメスはボクらの動きを全く脅威と感じていないだろうね。むしろ見て楽しんでいるかも。それほどヤツの力は強大さ」</p><p class="dialogue"><span class="sp efi">エフィ</span>「そ、そんな……」</p><p class="dialogue"><span class="sp kuro">黒猫</span>「でもだいじょーぶ！ボクも神様なんだからね！いざというときはキミを守るさ！」</p>
 <p class="narration">胸を張ってそう言う黒猫を見て、私は少し笑顔になった。薄暗い森の中に現れたエメラルド色に輝く湖……そのほとりには、不気味に輝く甲冑が佇んでいた。</p>
@@ -530,13 +536,12 @@ body{
   <!-- PAGE 3: 第三章 ＋ 謎2 -->
   <div class="story-page" id="pg3">
    <div class="page-wrap">
-    <div style="text-align:center;"><button class="back-btn" onclick="goPage(2)">◀ 前の章へ</button></div>
     <div class="ch-wrap">
       <div class="ch-label">第三章</div>
       <div class="ch-title">白ウサギの屋敷</div>
     </div>
     <div class="text-theater">
-      <div class="story-text" id="st2">
+      <div class="story-text" id="st2"><div class="back-btn-in-text"><button class="back-btn" onclick="goPage(2)">◀ 前の章へ</button></div>
 <p class="narration">私たちは騎士の魂を集めながら、獣が巣食う迷いの森からなんとか脱出した。</p>
 <p class="dialogue"><span class="sp efi">エフィ</span>「ふぅ、なんとか切り抜けたわ……！これもあなたの剣のおかげよ、オリバー」</p><p class="dialogue"><span class="sp oliver">オリバー</span>「私は……困難に立ち向かう姫を見てあの頃の情熱を、思い出しつつあります。姫様、どうかこの先も、私も同行させてください」</p><p class="dialogue"><span class="sp efi">エフィ</span>「ありがとう、とっても心強い！」</p>
 <p class="narration">オリバーの後ろにはたくさんの騎士の魂がいた。自分自身が何者かを思い出せないようで、彼らの輪郭はぼやけていた。しかしオリバーの後ろを必ずついてくるあたり、生前の記憶が身体に染み付いているのだろう。</p>
@@ -560,13 +565,12 @@ body{
   <!-- PAGE 4: 第四章 ＋ 最後の謎 -->
   <div class="story-page" id="pg4">
    <div class="page-wrap">
-    <div style="text-align:center;"><button class="back-btn" onclick="goPage(3)">◀ 前の章へ</button></div>
     <div class="ch-wrap">
       <div class="ch-label">第四章</div>
       <div class="ch-title">神 殿 へ</div>
     </div>
     <div class="text-theater">
-      <div class="story-text" id="st3"><p class="dialogue"><span class="sp efi">エフィ</span>「よしっ、箱が開いたわ！」</p>
+      <div class="story-text" id="st3"><div class="back-btn-in-text"><button class="back-btn" onclick="goPage(3)">◀ 前の章へ</button></div><p class="dialogue"><span class="sp efi">エフィ</span>「よしっ、箱が開いたわ！」</p>
 <p class="narration">悪食は大きな口を開くと、ペッと〝手首〟を吐き出した。</p>
 <p class="dialogue"><span class="sp kuro">黒猫</span>「見てて！」</p>
 <p class="narration">シーシュポスは断手の前で静かに瞑想を始めた。そして黒猫が次に目を開けた瞬間、彼の前に巨大な魔法陣が展開された。</p>
@@ -610,13 +614,12 @@ body{
   <!-- PAGE 5: エンディング -->
   <div class="story-page" id="pg5">
    <div class="page-wrap">
-    <div style="text-align:center;"><button class="back-btn" onclick="goPage(4)">◀ 前の章へ</button></div>
     <div class="ch-wrap">
       <div class="ch-label ending-label">エンディング</div>
       <div class="ch-title">決 意</div>
     </div>
     <div class="text-theater" style="height:70svh;">
-      <div class="story-text" id="st4">
+      <div class="story-text" id="st4"><div class="back-btn-in-text"><button class="back-btn" onclick="goPage(4)">◀ 前の章へ</button></div>
 <p class="narration">謎が解けた。瞬間、口から呪文が湧き出てくる。</p>
 <p class="dialogue"><span class="sp efi">エフィ</span>「闇の深淵たるこの『世界』で待ち続ける魂よ今、そなたらの魂を呼び起こす。私の忠実なる守護者として……いまここに立ち上がれ！」</p>
 <p class="narration">開かずの棺は浮き上がると、回転し——そして消えた。中からは、光り輝く魂が浮かび上がった。</p>
