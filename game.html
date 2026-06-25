@@ -171,7 +171,7 @@ body{
 /* ===== VERTICAL TEXT ===== */
 .text-theater{
   position:relative;
-  height:72svh;min-height:320px;
+  height:78svh;min-height:340px;
   margin:8px 0;
 }
 .story-text{
@@ -220,14 +220,15 @@ body{
 .cta-row .ans-cta-hz{flex:1;margin-top:0;width:auto;padding:13px 20px;}
 .hint-cta-btn{
   flex:1;padding:13px 20px;
-  border:2px solid rgba(139,96,48,.55);border-radius:12px;
-  font-size:.95rem;letter-spacing:2px;white-space:nowrap;
-  color:#9a7040;
-  background:linear-gradient(135deg,rgba(40,24,8,.5),rgba(20,12,4,.6));
+  border:2px solid var(--gold);border-radius:12px;
+  font-size:1rem;letter-spacing:3px;white-space:nowrap;
+  color:#f0d090;
+  background:linear-gradient(135deg,rgba(74,42,8,.65),rgba(42,21,4,.75));
+  box-shadow:0 0 10px rgba(192,144,64,.3);
   cursor:pointer;font-family:inherit;transition:all .2s;
   text-align:center;
 }
-.hint-cta-btn:hover{border-color:#9a7030;color:#c09050;box-shadow:0 0 10px rgba(139,96,48,.3);}
+.hint-cta-btn:hover{border-color:#ffd060;color:#ffd060;box-shadow:0 0 16px rgba(192,144,64,.5);}
 .nxt-hidden{opacity:0;pointer-events:none;transition:opacity .5s;}
 .story-text p{margin-left:1.4em;}
 .story-text p:first-child{margin-left:0;}
@@ -339,7 +340,7 @@ body{
   display:inline-block;
   writing-mode:horizontal-tb;
   vertical-align:top;
-  padding:0 16px 24px;
+  padding:0 16px 32px;
   max-width:min(640px, calc(100vw - 32px));
   box-sizing:border-box;
 }
@@ -348,7 +349,7 @@ body{
   width:auto;
   max-width:100%;
   height:auto;
-  max-height:44svh;
+  max-height:40svh;
   border-radius:4px;
   border:1px solid var(--border);
   object-fit:contain;
