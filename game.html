@@ -216,15 +216,16 @@ body{
 .ans-cta-hz:hover{border-color:#ffd060;color:#ffd060;box-shadow:0 0 16px rgba(192,144,64,.5);}
 .ans-cta-hz.last{border-color:#cc4444;color:#ff9090;}
 /* ===== CTA ROW ===== */
-.cta-row{display:flex;gap:8px;margin-top:14px;align-items:stretch;}
-.cta-row .ans-cta-hz{flex:1;margin-top:0;width:auto;}
+.cta-row{display:flex;gap:10px;margin-top:16px;margin-bottom:8px;align-items:stretch;}
+.cta-row .ans-cta-hz{flex:1;margin-top:0;width:auto;padding:16px 20px;}
 .hint-cta-btn{
-  flex:0 0 auto;padding:14px 18px;
+  flex:1;padding:16px 20px;
   border:2px solid rgba(139,96,48,.55);border-radius:12px;
-  font-size:.85rem;letter-spacing:2px;white-space:nowrap;
+  font-size:.95rem;letter-spacing:2px;white-space:nowrap;
   color:#9a7040;
   background:linear-gradient(135deg,rgba(40,24,8,.5),rgba(20,12,4,.6));
   cursor:pointer;font-family:inherit;transition:all .2s;
+  text-align:center;
 }
 .hint-cta-btn:hover{border-color:#9a7030;color:#c09050;box-shadow:0 0 10px rgba(139,96,48,.3);}
 .nxt-hidden{opacity:0;pointer-events:none;transition:opacity .5s;}
@@ -338,7 +339,7 @@ body{
   display:inline-block;
   writing-mode:horizontal-tb;
   vertical-align:top;
-  padding:0 16px;
+  padding:0 16px 24px;
   max-width:min(640px, calc(100vw - 32px));
   box-sizing:border-box;
 }
