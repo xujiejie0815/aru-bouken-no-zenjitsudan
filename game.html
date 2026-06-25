@@ -277,6 +277,33 @@ body{
   cursor:pointer;letter-spacing:1px;text-decoration:underline;opacity:.7;
 }
 .modal-close-btn:hover{opacity:1;color:#ffd060;}
+/* ===== HINTS ===== */
+.hint-section{margin-top:20px;padding-top:16px;border-top:1px solid rgba(139,96,48,.3);}
+.hint-section-header{font-size:.78rem;color:#7a5828;letter-spacing:3px;text-align:center;margin-bottom:14px;font-family:sans-serif;}
+.hint-item{margin-bottom:6px;}
+.hint-btn{
+  width:100%;padding:9px 12px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(139,96,48,.35);border-radius:4px;
+  color:#9a7040;font-size:.8rem;cursor:pointer;
+  font-family:sans-serif;text-align:left;
+  transition:all .2s;display:flex;align-items:center;gap:8px;
+}
+.hint-btn::before{content:"▶";font-size:.6rem;transition:transform .2s;flex-shrink:0;opacity:.7;}
+.hint-btn.open::before{transform:rotate(90deg);}
+.hint-btn:hover{border-color:#8a6030;color:#b08040;background:rgba(255,255,255,.06);}
+.hint-btn.ans-hint{border-color:rgba(180,60,60,.35);color:#aa5050;}
+.hint-btn.ans-hint:hover{border-color:#cc4444;color:#ff9090;}
+.hint-text{
+  display:none;padding:10px 14px;
+  background:rgba(0,0,0,.22);
+  border-left:2px solid #7a5828;
+  color:#c0a070;font-size:.82rem;
+  line-height:1.8;font-family:sans-serif;margin-top:3px;
+  border-radius:0 4px 4px 0;
+}
+.hint-text.ans-txt{border-left-color:#8a2020;color:#cc8080;}
+.hint-text.show{display:block;animation:fadeUp .25s ease;}
 .puzzle-sec{
   writing-mode:horizontal-tb;
   margin:16px 20px 24px;
@@ -703,6 +730,13 @@ body{
     <div class="next-wrap" id="nx1">
       <button class="next-btn" onclick="goPage(3);closeAnsModal(1)">続きを読む ▶</button>
     </div>
+<div class="hint-section">
+  <p class="hint-section-header">— ヒント —</p>
+  <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht1_0">手元の紙「迷いの森の地図」を見ながら迷路を辿ろう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_1')">迷いの森の地図のヒントその1</button><div class="hint-text" id="ht1_1">最初に通る文字は「し」だ。「し」を通るまでには３つの魂を拾うことができる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_2')">迷いの森のヒントその2</button><div class="hint-text" id="ht1_2">「ん」の次に「き」を通ろう。</div></div>
+    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht1_3')">迷いの森の答え</button><div class="hint-text ans-txt" id="ht1_3">答えは「しんきろう」だ。</div></div>
+</div>
     <button class="modal-close-btn" onclick="closeAnsModal(1)">閉じる</button>
   </div>
 </div>
@@ -722,6 +756,14 @@ body{
     <div class="next-wrap" id="nx2">
       <button class="next-btn" onclick="goPage(4);closeAnsModal(2)">続きを読む ▶</button>
     </div>
+<div class="hint-section">
+  <p class="hint-section-header">— ヒント —</p>
+  <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht2_0">手元にある「悪食の箱の盤面」の紙を用意しよう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_1')">白ウサギの屋敷のヒントその1</button><div class="hint-text" id="ht2_1">それぞれのピースを隙間なく埋めていこう。回転・反転は不要。ピースをあてはめたらピースに書いてある文字を「悪食の箱の盤面」にも書き込むのを忘れずに。赤いピースは左下に当てはまる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_2')">白ウサギの屋敷のヒントその2</button><div class="hint-text" id="ht2_2">右上には緑のピースがあてはまる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_3')">白ウサギの屋敷のヒントその3</button><div class="hint-text" id="ht2_3">左下には赤いピース、その右側には紫のピース、その右には黒いピースがあてはまる。全てのピースをこの要領であてはめて①②③の文字を拾おう。</div></div>
+    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht2_4')">白ウサギの屋敷の答え</button><div class="hint-text ans-txt" id="ht2_4">答えは「じかん」だ。</div></div>
+</div>
     <button class="modal-close-btn" onclick="closeAnsModal(2)">閉じる</button>
   </div>
 </div>
@@ -741,6 +783,18 @@ body{
     <div class="next-wrap" id="nx3">
       <button class="next-btn last" onclick="goPage(5);closeAnsModal(3)">エンディングへ ▶</button>
     </div>
+<div class="hint-section">
+  <p class="hint-section-header">— ヒント —</p>
+  <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht3_0">「左の空白」とは一体何を指すかを考えよう。手元の紙を全て見直すと見つかるぞ。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_1')">神殿へのヒントその1</button><div class="hint-text" id="ht3_1">「悪食の箱の盤面」の紙の左側に「フリースペース」がある。そこに最後の謎の盤面と文字を書き足していこう。パズルのピースに書いてあった文字も盤面に書き足しておこう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_2')">神殿へのヒントその2</button><div class="hint-text" id="ht3_2">盤面と文字を付け加えたら「魂を拾った順に読め」の指示に従おう。これまでの謎の中で魂を拾った謎はなかっただろうか。全ての文字を拾うと新たな指示文が出てくるぞ。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_3')">神殿へのヒントその3</button><div class="hint-text" id="ht3_3">悪食の箱に最後の謎の盤面を付け加えたことで「迷いの森の地図」のマス数と一致するようになった。左上をスタート、右下をゴールとして拾った魂の場所にある文字を全て拾おう。最初の文字は「ふ」、次の文字は「た」のような要領だ。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_4')">神殿へのヒントその4</button><div class="hint-text" id="ht3_4">「ふたつのほん」という文字が辿れていれば正解だ。続けよう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_5')">魂を拾った順に読むと出てくる指示文の答え</button><div class="hint-text" id="ht3_5">「ふたつのほんどうじにとじててんにすかせ」という指示が出てくる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_6')">その後が分からない</button><div class="hint-text" id="ht3_6">手元にある紙に「2つの本」はなかっただろうか。迷いの森の地図を見てみよう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_7')">その後が分からない②</button><div class="hint-text" id="ht3_7">迷路の左右中央に開かれた状態の本がある。これを閉じるように真ん中部分で谷折りをして天に透かそう。迷路の壁がカタカナ3文字の文字を作るぞ。</div></div>
+    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht3_8')">最後の謎の答え</button><div class="hint-text ans-txt" id="ht3_8">答えは「セカイ」だ。</div></div>
+</div>
     <button class="modal-close-btn" onclick="closeAnsModal(3)">閉じる</button>
   </div>
 </div>
@@ -750,6 +804,13 @@ body{
 <script>
 // ===== PASSWORD =====
 document.getElementById('pw-in').addEventListener('keydown',function(e){if(e.key==='Enter')checkPw();});
+
+function toggleHint(id){
+  var txt=document.getElementById(id);
+  var btn=txt.previousElementSibling;
+  var showing=txt.classList.toggle('show');
+  btn.classList.toggle('open',showing);
+}
 function checkPw(){
   if(document.getElementById('pw-in').value==='1234'){
     document.getElementById('pw-screen').style.display='none';
