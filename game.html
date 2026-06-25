@@ -215,6 +215,18 @@ body{
 }
 .ans-cta-hz:hover{border-color:#ffd060;color:#ffd060;box-shadow:0 0 16px rgba(192,144,64,.5);}
 .ans-cta-hz.last{border-color:#cc4444;color:#ff9090;}
+/* ===== CTA ROW ===== */
+.cta-row{display:flex;gap:8px;margin-top:14px;align-items:stretch;}
+.cta-row .ans-cta-hz{flex:1;margin-top:0;width:auto;}
+.hint-cta-btn{
+  flex:0 0 auto;padding:14px 18px;
+  border:2px solid rgba(139,96,48,.55);border-radius:12px;
+  font-size:.85rem;letter-spacing:2px;white-space:nowrap;
+  color:#9a7040;
+  background:linear-gradient(135deg,rgba(40,24,8,.5),rgba(20,12,4,.6));
+  cursor:pointer;font-family:inherit;transition:all .2s;
+}
+.hint-cta-btn:hover{border-color:#9a7030;color:#c09050;box-shadow:0 0 10px rgba(139,96,48,.3);}
 .nxt-hidden{opacity:0;pointer-events:none;transition:opacity .5s;}
 .story-text p{margin-left:1.4em;}
 .story-text p:first-child{margin-left:0;}
@@ -568,7 +580,7 @@ body{
 <p class="narration">甲冑は、たどたどしく言葉を発しながらも、うやうやしくお辞儀をした。</p>
 <p class="dialogue"><span class="sp kuro">黒猫</span>「……オリバーの魂はヘルメスに敗北したのち、この森に捨てられたんだろうね。魂は迷いの森に長期間いると、生前の記憶を徐々に失って……最終的には動物の姿になってしまうんだ。でも彼はまだ自我を保っている。しかもこの辺りに若い魂の反応が複数ある……他の騎士たちの魂もここに！！」</p><p class="dialogue"><span class="sp efi">エフィ</span>「なるほど！白ウサギの屋敷に向かう前に、まず戦力を増強しましょう！」</p><p class="dialogue"><span class="sp oliver">オリバー</span>「……私は……皆に会いたい」</p><p class="dialogue"><span class="sp oliver">オリバー</span>「騎士団の皆に会い……アルベルト様をお救いする……私の……使命です」</p><p class="dialogue"><span class="sp efi">エフィ</span>「オリバー……えぇ、わかったわ。でも、決して無理はしないで」</p><p class="dialogue"><span class="sp unk">フクロウ</span>「おや、見ない顔。一緒に遊ぼうよ」</p><p class="dialogue"><span class="sp unk">ナマケモノ</span>「知っているよ、騎士の魂を集めているのでしょう？」</p><p class="dialogue"><span class="sp unk">リス</span>「もう遅いよ、他の騎士たちは森の一部になりかけているよ？」</p><p class="dialogue"><span class="sp efi">エフィ</span>「えっ！そんな！！？もう手遅れだというの！？」</p><p class="dialogue"><span class="sp kuro">黒猫</span>「いいやエフィちゃん。まだ森の住人になりきってはいないはずだ！！」</p><p class="dialogue"><span class="sp unk">獣たち</span>「エフィたちは騎士団の魂を集めながら、迷いの森を出ることだね！くくく、キミは永遠にこの森に彷徨い続けることになるさ！さん、に、いちゼロ！さぁ、はじまりだ！！」</p>
 <p class="narration">獣たちはカラカラと笑うと、一斉に姿を消した。</p>
-<div class="puzzle-img-in-text"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAzIiBoZWlnaHQ9Ijc0NyI+PHJlY3Qgd2lkdGg9IjEwMDMiIGhlaWdodD0iNzQ3IiBmaWxsPSIjNGE2ZmE1IiBvcGFjaXR5PSIwLjg1Ii8+PHJlY3QgeD0iNCIgeT0iNCIgd2lkdGg9Ijk5NSIgaGVpZ2h0PSI3MzkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtZGFzaGFycmF5PSIxMCw1IiBvcGFjaXR5PSIwLjUiLz48dGV4dCB4PSI1MDEiIHk9IjM1MyIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjM2IiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7jgJDku67jgJE8L3RleHQ+PHRleHQgeD0iNTAxIiB5PSI0MDMiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyOCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+6L+344GE44Gu5qOu44Gu44Or44O844Or77yI5Luu77yJPC90ZXh0Pjwvc3ZnPg==" alt="謎１ 迷路ルール"><button class="ans-cta-hz" id="ans-btn1" onclick="openAnsModal(1)">謎を回答する</button></div></div>
+<div class="puzzle-img-in-text"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAzIiBoZWlnaHQ9Ijc0NyI+PHJlY3Qgd2lkdGg9IjEwMDMiIGhlaWdodD0iNzQ3IiBmaWxsPSIjNGE2ZmE1IiBvcGFjaXR5PSIwLjg1Ii8+PHJlY3QgeD0iNCIgeT0iNCIgd2lkdGg9Ijk5NSIgaGVpZ2h0PSI3MzkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtZGFzaGFycmF5PSIxMCw1IiBvcGFjaXR5PSIwLjUiLz48dGV4dCB4PSI1MDEiIHk9IjM1MyIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjM2IiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7jgJDku67jgJE8L3RleHQ+PHRleHQgeD0iNTAxIiB5PSI0MDMiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyOCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+6L+344GE44Gu5qOu44Gu44Or44O844Or77yI5Luu77yJPC90ZXh0Pjwvc3ZnPg==" alt="謎１ 迷路ルール"><div class="cta-row"><button class="ans-cta-hz" id="ans-btn1" onclick="openAnsModal(1)">謎を回答する</button><button class="hint-cta-btn" onclick="openHintModal(1)">ヒント</button></div></div></div>
     </div>
    </div>
   </div>
@@ -597,7 +609,7 @@ body{
 <p class="narration">話の途中でオリバーが颯爽と現れ箱に鋭い一撃をいれた。しかし箱には傷一つつかなかった。</p>
 <p class="dialogue"><span class="sp kuro">黒猫</span>「これは『悪食』という魔道具だよ。力づくじゃ開かない。しょうがない、正攻法でいこう。さぁ……謎解きの時間だ！」</p>
 <p class="narration">蓋の部分がぶるぶると動き出し……マスがたくさん書かれた盤面と６つのピースを吐出した。</p>
-<p class="dialogue"><span class="sp unk">悪食の箱</span>「１０×１０マスの盤面を用意した！そこに６つのピースを当てはめろ！回転・反転してはいけない！答えは①②③！」</p><div class="puzzle-img-in-text"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MTAiIGhlaWdodD0iNjg2Ij48cmVjdCB3aWR0aD0iOTEwIiBoZWlnaHQ9IjY4NiIgZmlsbD0iIzZiNGMzYiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI5MDIiIGhlaWdodD0iNjc4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMTAsNSIgb3BhY2l0eT0iMC41Ii8+PHRleHQgeD0iNDU1IiB5PSIzMjMiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIzNiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+44CQ5Luu44CRPC90ZXh0Pjx0ZXh0IHg9IjQ1NSIgeT0iMzczIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuaCqumjn+OBrueuseOBruebpOmdou+8iOS7ru+8iTwvdGV4dD48L3N2Zz4=" alt="謎２ 悪食の箱ピース"><button class="ans-cta-hz" id="ans-btn2" onclick="openAnsModal(2)">謎を回答する</button></div></div>
+<p class="dialogue"><span class="sp unk">悪食の箱</span>「１０×１０マスの盤面を用意した！そこに６つのピースを当てはめろ！回転・反転してはいけない！答えは①②③！」</p><div class="puzzle-img-in-text"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MTAiIGhlaWdodD0iNjg2Ij48cmVjdCB3aWR0aD0iOTEwIiBoZWlnaHQ9IjY4NiIgZmlsbD0iIzZiNGMzYiIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI5MDIiIGhlaWdodD0iNjc4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMTAsNSIgb3BhY2l0eT0iMC41Ii8+PHRleHQgeD0iNDU1IiB5PSIzMjMiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIzNiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+44CQ5Luu44CRPC90ZXh0Pjx0ZXh0IHg9IjQ1NSIgeT0iMzczIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuaCqumjn+OBrueuseOBruebpOmdou+8iOS7ru+8iTwvdGV4dD48L3N2Zz4=" alt="謎２ 悪食の箱ピース"><div class="cta-row"><button class="ans-cta-hz" id="ans-btn2" onclick="openAnsModal(2)">謎を回答する</button><button class="hint-cta-btn" onclick="openHintModal(2)">ヒント</button></div></div></div>
     </div>
    </div>
   </div>
@@ -646,7 +658,7 @@ body{
 <p class="narration">棺からカチャンと小気味良い音が聞こえた——が。</p>
 <p class="dialogue"><span class="sp hermes">ヘルメス</span>「いけませんねぇ……背骨なんて反則ですよ、黒猫さん」</p>
 <p class="narration">ヘルメスは棺に向かってふっと息をかけた。新たな鍵が棺にまきつけられる。</p>
-<p class="dialogue"><span class="sp hermes">ヘルメス</span>「私とひとつ、ゲームをしましょう。謎が解けるのが先か、あなた方が全滅するのが先か……これを競いましょう！！！」</p><p class="dialogue"><span class="sp kuro">黒猫</span>「……エフィちゃん、ボクらのことは気にしないで。とにかくキミは、早くヘルメスが仕掛けた最後の謎を解き明かすんだ……！！大丈夫、絶対に成功する！！弟を、助けるんだ！！」</p><div class="puzzle-img-in-text"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MTEiIGhlaWdodD0iNjgyIj48cmVjdCB3aWR0aD0iOTExIiBoZWlnaHQ9IjY4MiIgZmlsbD0iIzNkM2QzZCIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI5MDMiIGhlaWdodD0iNjc0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMTAsNSIgb3BhY2l0eT0iMC41Ii8+PHRleHQgeD0iNDU1IiB5PSIzMjEiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIzNiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+44CQ5Luu44CRPC90ZXh0Pjx0ZXh0IHg9IjQ1NSIgeT0iMzcxIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuacgOW+jOOBruisju+8iOS7ru+8iTwvdGV4dD48L3N2Zz4=" alt="最後の謎 ヘルメスの問い"><button class="ans-cta-hz last" id="ans-btn3" onclick="openAnsModal(3)">謎を回答する</button></div></div>
+<p class="dialogue"><span class="sp hermes">ヘルメス</span>「私とひとつ、ゲームをしましょう。謎が解けるのが先か、あなた方が全滅するのが先か……これを競いましょう！！！」</p><p class="dialogue"><span class="sp kuro">黒猫</span>「……エフィちゃん、ボクらのことは気にしないで。とにかくキミは、早くヘルメスが仕掛けた最後の謎を解き明かすんだ……！！大丈夫、絶対に成功する！！弟を、助けるんだ！！」</p><div class="puzzle-img-in-text"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MTEiIGhlaWdodD0iNjgyIj48cmVjdCB3aWR0aD0iOTExIiBoZWlnaHQ9IjY4MiIgZmlsbD0iIzNkM2QzZCIgb3BhY2l0eT0iMC44NSIvPjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI5MDMiIGhlaWdodD0iNjc0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMTAsNSIgb3BhY2l0eT0iMC41Ii8+PHRleHQgeD0iNDU1IiB5PSIzMjEiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIzNiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+44CQ5Luu44CRPC90ZXh0Pjx0ZXh0IHg9IjQ1NSIgeT0iMzcxIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuacgOW+jOOBruisju+8iOS7ru+8iTwvdGV4dD48L3N2Zz4=" alt="最後の謎 ヘルメスの問い"><div class="cta-row"><button class="ans-cta-hz last" id="ans-btn3" onclick="openAnsModal(3)">謎を回答する</button><button class="hint-cta-btn" onclick="openHintModal(3)">ヒント</button></div></div></div>
     </div>
    </div>
   </div>
@@ -730,9 +742,6 @@ body{
     <div class="next-wrap" id="nx1">
       <button class="next-btn" onclick="goPage(3);closeAnsModal(1)">続きを読む ▶</button>
     </div>
-<div class="hint-section">
-  <p class="hint-section-header">— ヒント —</p>
-  <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht1_0">手元の紙「迷いの森の地図」を見ながら迷路を辿ろう。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_1')">迷いの森の地図のヒントその1</button><div class="hint-text" id="ht1_1">最初に通る文字は「し」だ。「し」を通るまでには３つの魂を拾うことができる。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_2')">迷いの森のヒントその2</button><div class="hint-text" id="ht1_2">「ん」の次に「き」を通ろう。</div></div>
     <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht1_3')">迷いの森の答え</button><div class="hint-text ans-txt" id="ht1_3">答えは「しんきろう」だ。</div></div>
@@ -756,9 +765,6 @@ body{
     <div class="next-wrap" id="nx2">
       <button class="next-btn" onclick="goPage(4);closeAnsModal(2)">続きを読む ▶</button>
     </div>
-<div class="hint-section">
-  <p class="hint-section-header">— ヒント —</p>
-  <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht2_0">手元にある「悪食の箱の盤面」の紙を用意しよう。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_1')">白ウサギの屋敷のヒントその1</button><div class="hint-text" id="ht2_1">それぞれのピースを隙間なく埋めていこう。回転・反転は不要。ピースをあてはめたらピースに書いてある文字を「悪食の箱の盤面」にも書き込むのを忘れずに。赤いピースは左下に当てはまる。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_2')">白ウサギの屋敷のヒントその2</button><div class="hint-text" id="ht2_2">右上には緑のピースがあてはまる。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_3')">白ウサギの屋敷のヒントその3</button><div class="hint-text" id="ht2_3">左下には赤いピース、その右側には紫のピース、その右には黒いピースがあてはまる。全てのピースをこの要領であてはめて①②③の文字を拾おう。</div></div>
@@ -783,9 +789,6 @@ body{
     <div class="next-wrap" id="nx3">
       <button class="next-btn last" onclick="goPage(5);closeAnsModal(3)">エンディングへ ▶</button>
     </div>
-<div class="hint-section">
-  <p class="hint-section-header">— ヒント —</p>
-  <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht3_0">「左の空白」とは一体何を指すかを考えよう。手元の紙を全て見直すと見つかるぞ。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_1')">神殿へのヒントその1</button><div class="hint-text" id="ht3_1">「悪食の箱の盤面」の紙の左側に「フリースペース」がある。そこに最後の謎の盤面と文字を書き足していこう。パズルのピースに書いてあった文字も盤面に書き足しておこう。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_2')">神殿へのヒントその2</button><div class="hint-text" id="ht3_2">盤面と文字を付け加えたら「魂を拾った順に読め」の指示に従おう。これまでの謎の中で魂を拾った謎はなかっただろうか。全ての文字を拾うと新たな指示文が出てくるぞ。</div></div>
     <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_3')">神殿へのヒントその3</button><div class="hint-text" id="ht3_3">悪食の箱に最後の謎の盤面を付け加えたことで「迷いの森の地図」のマス数と一致するようになった。左上をスタート、右下をゴールとして拾った魂の場所にある文字を全て拾おう。最初の文字は「ふ」、次の文字は「た」のような要領だ。</div></div>
@@ -799,12 +802,67 @@ body{
   </div>
 </div>
 
+<!-- ヒントモーダル1 -->
+<div class="ans-modal-overlay" id="hint-modal1" onclick="if(event.target===this)closeHintModal(1)">
+  <div class="ans-modal-inner">
+    <div class="puzzle-header">
+      <span class="puz-badge">謎 1</span>
+      <span class="puz-title">迷いの森の地図 ヒント</span>
+    </div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht1_0">手元の紙「迷いの森の地図」を見ながら迷路を辿ろう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_1')">迷いの森の地図のヒントその1</button><div class="hint-text" id="ht1_1">最初に通る文字は「し」だ。「し」を通るまでには３つの魂を拾うことができる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_2')">迷いの森のヒントその2</button><div class="hint-text" id="ht1_2">「ん」の次に「き」を通ろう。</div></div>
+    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht1_3')">迷いの森の答え</button><div class="hint-text ans-txt" id="ht1_3">答えは「しんきろう」だ。</div></div>
+    <button class="modal-close-btn" onclick="closeHintModal(1)">閉じる</button>
+  </div>
+</div>
+<!-- ヒントモーダル2 -->
+<div class="ans-modal-overlay" id="hint-modal2" onclick="if(event.target===this)closeHintModal(2)">
+  <div class="ans-modal-inner">
+    <div class="puzzle-header">
+      <span class="puz-badge">謎 2</span>
+      <span class="puz-title">悪食の箱 ヒント</span>
+    </div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht2_0">手元にある「悪食の箱の盤面」の紙を用意しよう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_1')">白ウサギの屋敷のヒントその1</button><div class="hint-text" id="ht2_1">それぞれのピースを隙間なく埋めていこう。回転・反転は不要。ピースをあてはめたらピースに書いてある文字を「悪食の箱の盤面」にも書き込むのを忘れずに。赤いピースは左下に当てはまる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_2')">白ウサギの屋敷のヒントその2</button><div class="hint-text" id="ht2_2">右上には緑のピースがあてはまる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_3')">白ウサギの屋敷のヒントその3</button><div class="hint-text" id="ht2_3">左下には赤いピース、その右側には紫のピース、その右には黒いピースがあてはまる。全てのピースをこの要領であてはめて①②③の文字を拾おう。</div></div>
+    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht2_4')">白ウサギの屋敷の答え</button><div class="hint-text ans-txt" id="ht2_4">答えは「じかん」だ。</div></div>
+    <button class="modal-close-btn" onclick="closeHintModal(2)">閉じる</button>
+  </div>
+</div>
+<!-- ヒントモーダル3 -->
+<div class="ans-modal-overlay" id="hint-modal3" onclick="if(event.target===this)closeHintModal(3)">
+  <div class="ans-modal-inner last">
+    <div class="puzzle-header">
+      <span class="puz-badge last">最後の謎</span>
+      <span class="puz-title">ヘルメスの謎 ヒント</span>
+    </div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_0')">まず何をしたら良いか分からない</button><div class="hint-text" id="ht3_0">「左の空白」とは一体何を指すかを考えよう。手元の紙を全て見直すと見つかるぞ。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_1')">神殿へのヒントその1</button><div class="hint-text" id="ht3_1">「悪食の箱の盤面」の紙の左側に「フリースペース」がある。そこに最後の謎の盤面と文字を書き足していこう。パズルのピースに書いてあった文字も盤面に書き足しておこう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_2')">神殿へのヒントその2</button><div class="hint-text" id="ht3_2">盤面と文字を付け加えたら「魂を拾った順に読め」の指示に従おう。これまでの謎の中で魂を拾った謎はなかっただろうか。全ての文字を拾うと新たな指示文が出てくるぞ。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_3')">神殿へのヒントその3</button><div class="hint-text" id="ht3_3">悪食の箱に最後の謎の盤面を付け加えたことで「迷いの森の地図」のマス数と一致するようになった。左上をスタート、右下をゴールとして拾った魂の場所にある文字を全て拾おう。最初の文字は「ふ」、次の文字は「た」のような要領だ。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_4')">神殿へのヒントその4</button><div class="hint-text" id="ht3_4">「ふたつのほん」という文字が辿れていれば正解だ。続けよう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_5')">魂を拾った順に読むと出てくる指示文の答え</button><div class="hint-text" id="ht3_5">「ふたつのほんどうじにとじててんにすかせ」という指示が出てくる。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_6')">その後が分からない</button><div class="hint-text" id="ht3_6">手元にある紙に「2つの本」はなかっただろうか。迷いの森の地図を見てみよう。</div></div>
+    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_7')">その後が分からない②</button><div class="hint-text" id="ht3_7">迷路の左右中央に開かれた状態の本がある。これを閉じるように真ん中部分で谷折りをして天に透かそう。迷路の壁がカタカナ3文字の文字を作るぞ。</div></div>
+    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht3_8')">最後の謎の答え</button><div class="hint-text ans-txt" id="ht3_8">答えは「セカイ」だ。</div></div>
+    <button class="modal-close-btn" onclick="closeHintModal(3)">閉じる</button>
+  </div>
+</div>
 </div><!-- #main -->
 
 <script>
 // ===== PASSWORD =====
 document.getElementById('pw-in').addEventListener('keydown',function(e){if(e.key==='Enter')checkPw();});
 
+
+function openHintModal(n){
+  document.getElementById('hint-modal'+n).classList.add('open');
+}
+function closeHintModal(n){
+  document.getElementById('hint-modal'+n).classList.remove('open');
+}
 function toggleHint(id){
   var txt=document.getElementById(id);
   var btn=txt.previousElementSibling;
