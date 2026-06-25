@@ -171,7 +171,7 @@ body{
 /* ===== VERTICAL TEXT ===== */
 .text-theater{
   position:relative;
-  height:62svh;min-height:280px;
+  height:72svh;min-height:320px;
   margin:8px 0;
 }
 .story-text{
@@ -217,9 +217,9 @@ body{
 .ans-cta-hz.last{border-color:#cc4444;color:#ff9090;}
 /* ===== CTA ROW ===== */
 .cta-row{display:flex;gap:10px;margin-top:16px;margin-bottom:8px;align-items:stretch;}
-.cta-row .ans-cta-hz{flex:1;margin-top:0;width:auto;padding:16px 20px;}
+.cta-row .ans-cta-hz{flex:1;margin-top:0;width:auto;padding:13px 20px;}
 .hint-cta-btn{
-  flex:1;padding:16px 20px;
+  flex:1;padding:13px 20px;
   border:2px solid rgba(139,96,48,.55);border-radius:12px;
   font-size:.95rem;letter-spacing:2px;white-space:nowrap;
   color:#9a7040;
@@ -348,7 +348,7 @@ body{
   width:auto;
   max-width:100%;
   height:auto;
-  max-height:55vh;
+  max-height:44svh;
   border-radius:4px;
   border:1px solid var(--border);
   object-fit:contain;
@@ -743,13 +743,10 @@ body{
     <div class="next-wrap" id="nx1">
       <button class="next-btn" onclick="goPage(3);closeAnsModal(1)">続きを読む ▶</button>
     </div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_1')">迷いの森の地図のヒントその1</button><div class="hint-text" id="ht1_1">最初に通る文字は「し」だ。「し」を通るまでには３つの魂を拾うことができる。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht1_2')">迷いの森のヒントその2</button><div class="hint-text" id="ht1_2">「ん」の次に「き」を通ろう。</div></div>
-    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht1_3')">迷いの森の答え</button><div class="hint-text ans-txt" id="ht1_3">答えは「しんきろう」だ。</div></div>
-</div>
-    <button class="modal-close-btn" onclick="closeAnsModal(1)">閉じる</button>
+        <button class="modal-close-btn" onclick="closeAnsModal(1)">閉じる</button>
   </div>
 </div>
+
 <!-- 解答モーダル2 -->
 <div class="ans-modal-overlay" id="ans-modal2" onclick="if(event.target===this)closeAnsModal(2)">
   <div class="ans-modal-inner">
@@ -766,14 +763,10 @@ body{
     <div class="next-wrap" id="nx2">
       <button class="next-btn" onclick="goPage(4);closeAnsModal(2)">続きを読む ▶</button>
     </div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_1')">白ウサギの屋敷のヒントその1</button><div class="hint-text" id="ht2_1">それぞれのピースを隙間なく埋めていこう。回転・反転は不要。ピースをあてはめたらピースに書いてある文字を「悪食の箱の盤面」にも書き込むのを忘れずに。赤いピースは左下に当てはまる。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_2')">白ウサギの屋敷のヒントその2</button><div class="hint-text" id="ht2_2">右上には緑のピースがあてはまる。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht2_3')">白ウサギの屋敷のヒントその3</button><div class="hint-text" id="ht2_3">左下には赤いピース、その右側には紫のピース、その右には黒いピースがあてはまる。全てのピースをこの要領であてはめて①②③の文字を拾おう。</div></div>
-    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht2_4')">白ウサギの屋敷の答え</button><div class="hint-text ans-txt" id="ht2_4">答えは「じかん」だ。</div></div>
-</div>
-    <button class="modal-close-btn" onclick="closeAnsModal(2)">閉じる</button>
+        <button class="modal-close-btn" onclick="closeAnsModal(2)">閉じる</button>
   </div>
 </div>
+
 <!-- 解答モーダル3 -->
 <div class="ans-modal-overlay" id="ans-modal3" onclick="if(event.target===this)closeAnsModal(3)">
   <div class="ans-modal-inner last">
@@ -790,18 +783,10 @@ body{
     <div class="next-wrap" id="nx3">
       <button class="next-btn last" onclick="goPage(5);closeAnsModal(3)">エンディングへ ▶</button>
     </div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_1')">神殿へのヒントその1</button><div class="hint-text" id="ht3_1">「悪食の箱の盤面」の紙の左側に「フリースペース」がある。そこに最後の謎の盤面と文字を書き足していこう。パズルのピースに書いてあった文字も盤面に書き足しておこう。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_2')">神殿へのヒントその2</button><div class="hint-text" id="ht3_2">盤面と文字を付け加えたら「魂を拾った順に読め」の指示に従おう。これまでの謎の中で魂を拾った謎はなかっただろうか。全ての文字を拾うと新たな指示文が出てくるぞ。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_3')">神殿へのヒントその3</button><div class="hint-text" id="ht3_3">悪食の箱に最後の謎の盤面を付け加えたことで「迷いの森の地図」のマス数と一致するようになった。左上をスタート、右下をゴールとして拾った魂の場所にある文字を全て拾おう。最初の文字は「ふ」、次の文字は「た」のような要領だ。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_4')">神殿へのヒントその4</button><div class="hint-text" id="ht3_4">「ふたつのほん」という文字が辿れていれば正解だ。続けよう。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_5')">魂を拾った順に読むと出てくる指示文の答え</button><div class="hint-text" id="ht3_5">「ふたつのほんどうじにとじててんにすかせ」という指示が出てくる。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_6')">その後が分からない</button><div class="hint-text" id="ht3_6">手元にある紙に「2つの本」はなかっただろうか。迷いの森の地図を見てみよう。</div></div>
-    <div class="hint-item"><button class="hint-btn" onclick="toggleHint('ht3_7')">その後が分からない②</button><div class="hint-text" id="ht3_7">迷路の左右中央に開かれた状態の本がある。これを閉じるように真ん中部分で谷折りをして天に透かそう。迷路の壁がカタカナ3文字の文字を作るぞ。</div></div>
-    <div class="hint-item"><button class="hint-btn ans-hint" onclick="toggleHint('ht3_8')">最後の謎の答え</button><div class="hint-text ans-txt" id="ht3_8">答えは「セカイ」だ。</div></div>
-</div>
-    <button class="modal-close-btn" onclick="closeAnsModal(3)">閉じる</button>
+        <button class="modal-close-btn" onclick="closeAnsModal(3)">閉じる</button>
   </div>
 </div>
+
 
 <!-- ヒントモーダル1 -->
 <div class="ans-modal-overlay" id="hint-modal1" onclick="if(event.target===this)closeHintModal(1)">
